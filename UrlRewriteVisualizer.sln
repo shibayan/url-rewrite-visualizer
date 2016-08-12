@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{F83543B6-3F88-4880-8DCE-E7622DE0A189}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{0DC4B1FA-11A0-4E61-8ED7-F602C72C8F9E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UrlRewriteVisualizer", "src\UrlRewriteVisualizer\UrlRewriteVisualizer.csproj", "{5F825EE0-4070-4988-AC91-6B7ED07E5FD7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VisualizerTest", "test\VisualizerTest\VisualizerTest.csproj", "{A9B00D1F-ED28-4F0B-9AF4-C6D1D8A71383}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5F825EE0-4070-4988-AC91-6B7ED07E5FD7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5F825EE0-4070-4988-AC91-6B7ED07E5FD7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5F825EE0-4070-4988-AC91-6B7ED07E5FD7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5F825EE0-4070-4988-AC91-6B7ED07E5FD7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A9B00D1F-ED28-4F0B-9AF4-C6D1D8A71383}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A9B00D1F-ED28-4F0B-9AF4-C6D1D8A71383}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A9B00D1F-ED28-4F0B-9AF4-C6D1D8A71383}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A9B00D1F-ED28-4F0B-9AF4-C6D1D8A71383}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{5F825EE0-4070-4988-AC91-6B7ED07E5FD7} = {F83543B6-3F88-4880-8DCE-E7622DE0A189}
+		{A9B00D1F-ED28-4F0B-9AF4-C6D1D8A71383} = {0DC4B1FA-11A0-4E61-8ED7-F602C72C8F9E}
+	EndGlobalSection
+EndGlobal
