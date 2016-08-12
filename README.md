@@ -1,4 +1,4 @@
-URL Rewrite Visualizert
+URL Rewrite Visualizer
 ================
 
 ## License
