@@ -9,7 +9,7 @@ namespace UrlRewriteVisualizer
             Input = (string)element.Attribute("input");
             Pattern = (string)element.Attribute("pattern");
             IgnoreCase = (bool?)element.Attribute("ignoreCase") ?? false;
-            Negate = (bool)element.Attribute("negate");
+            Negate = (bool?)element.Attribute("negate") ?? false;
         }
 
         public string Input { get; set; }

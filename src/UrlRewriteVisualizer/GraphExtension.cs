@@ -88,12 +88,12 @@ namespace UrlRewriteVisualizer
 
                 dependency.Add(item);
 
-                if (item.Action.Type == ActionType.None || item.Action.Type == ActionType.CustomResponse || item.Action.Type == ActionType.AbortRequest)
+                if (item.Action.Type == ActionType.CustomResponse || item.Action.Type == ActionType.AbortRequest)
                 {
                     return;
                 }
 
-                if (item.StopProcessing)
+                if (item.Action.Type == ActionType.Rewrite || item.StopProcessing)
                 {
                     return;
                 }
@@ -103,6 +103,11 @@ namespace UrlRewriteVisualizer
                 for (int i = 0; i < match.Groups.Count; i++)
                 {
                     url = url.Replace("{R:" + i + "}", match.Groups[i].Value);
+                }
+
+                if (url.StartsWith("http"))
+                {
+                    url = url.Substring(url.IndexOf('/', 9) + 1);
                 }
 
                 FindDependency(url, definition, dependency);
