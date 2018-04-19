@@ -13,7 +13,7 @@ namespace UrlRewriteVisualizer
         {
             Name = (string)element.Attribute("name");
             Enabled = (bool?)element.Attribute("enabled") ?? false;
-            PatternSyntax = EnumEx.Parse<PatternSyntax>((string)element.Attribute("patternSyntax"));
+            PatternSyntax = EnumHelper.ParseOrDefault((string)element.Attribute("patternSyntax"), PatternSyntax.ECMAScript);
             StopProcessing = (bool?)element.Attribute("stopProcessing") ?? false;
 
             Match = new MatchElement(element.Element("match"));

@@ -50,7 +50,7 @@
     <Compile Include="ActionElement.cs" />
     <Compile Include="ActionType.cs" />
     <Compile Include="ConditionElement.cs" />
-    <Compile Include="Internal\EnumEx.cs" />
+    <Compile Include="Internal\EnumHelper.cs" />
     <Compile Include="GraphExtension.cs" />
     <Compile Include="GraphOptions.cs" />
     <Compile Include="MatchElement.cs" />

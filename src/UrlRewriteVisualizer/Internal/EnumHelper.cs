@@ -2,9 +2,9 @@
 
 namespace UrlRewriteVisualizer.Internal
 {
-    internal static class EnumEx
+    internal static class EnumHelper
     {
-        internal static TEnum Parse<TEnum>(string value) where TEnum : struct
+        internal static TEnum ParseOrDefault<TEnum>(string value, TEnum defaultValue) where TEnum : struct
         {
             if (string.IsNullOrEmpty(value))
             {

@@ -8,7 +8,7 @@ namespace UrlRewriteVisualizer
     {
         public ActionElement(XElement element)
         {
-            Type = EnumEx.Parse<ActionType>((string)element.Attribute("type"));
+            Type = EnumHelper.ParseOrDefault<ActionType>((string)element.Attribute("type"));
             Url = (string)element.Attribute("url");
         }
 
